@@ -1,7 +1,8 @@
 import React, {useState, useRef, useEffect} from "react";
 import Avatar from "../../assets/avatar_neutral.riv"
 import {useRive, useStateMachineInput} from "rive-react";
-
+import {motion} from "framer-motion";
+import 'tailwindcss/tailwind.css'
 
 //STYLES
 import '../../styles/home.css'
@@ -20,7 +21,10 @@ let Home = () => {
     useEffect(() => {
         //Equivalent to componentDidMount
         window.addEventListener('scroll', handleScroll)
-
+        if (eyeHor != undefined)
+            eyeHor.value = 0;
+        if (eyeVer != undefined)
+            eyeVer.value = 0;
 
         //Equivalent to componentDidUnmount
         return () => {
@@ -91,11 +95,72 @@ let Home = () => {
     return (
 
         <div className="home" ref={ref} onMouseMove={onMouseMove}>
+
+
             <section className="avatar_buttons">
                 <RiveComponent className='avatar'/>
                 <div className="btn-container">
-                    <button className='btn-2 neonTextWhite flicker btnG button '>Technical Side</button>
-                    <button className='btn-1 neonText subtleFlick button'>Artistic Side</button>
+                    <motion.button className='btn-2 neonTextWhite flicker  '
+                                   initial={
+                                       {
+                                           scale: 0,
+                                           left: "-100vw",
+                                           top: "-100vh"
+
+
+                                       }
+                                   }
+
+                                   animate={{
+                                       left: 0,
+                                       top: 0,
+                                       scale: 1
+                                   }}
+
+                                   transition={{
+                                       delay: 0.51,
+
+                                   }}
+                                   whileHover={
+                                       {
+                                           backgroundColor: "rgba(100,0,0,0.5)",
+                                           color: "pink",
+                                           borderTopLeftRadius: "5px",
+                                       }
+                                   }
+                    >Technical Side
+                    </motion.button>
+                    <motion.button className='btn-1 neonText subtleFlick '
+                                   initial={
+                                       {
+                                           scale: 0,
+                                           right: "-100vw",
+                                           bottom: "-100vh"
+
+
+                                       }
+                                   }
+
+                                   animate={{
+                                       right: 0,
+                                       bottom: 0,
+                                       scale: 1
+                                   }}
+
+                                   transition={{
+                                       delay: 0.51,
+
+                                   }}
+                                   whileHover={
+                                       {
+                                           backgroundColor: "rgba(0,0,0,0.5)",
+                                           color: "pink",
+                                           borderTopRightRadius: "5px",
+
+                                       }
+                                   }
+                    >Artistic Side
+                    </motion.button>
                 </div>
             </section>
         </div>
