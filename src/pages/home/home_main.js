@@ -1,13 +1,39 @@
-import React, {useState, useRef} from "react";
-import '../../styles/home.css'
+import React, {useState, useRef, useEffect} from "react";
 import Avatar from "../../assets/avatar_neutral.riv"
 import {useRive, useStateMachineInput} from "rive-react";
 
+
+//STYLES
+import '../../styles/home.css'
+import '../../styles/neon.css'
+import '../../styles/glow.css'
+
+
 let Home = () => {
+    //Scrolling Data section
+    const [scrollY, setScrollY] = useState(0) //Starting value is 0 and as we scroll down the value will change
+    //Updates the value of scroll
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    }
+
+    useEffect(() => {
+        //Equivalent to componentDidMount
+        window.addEventListener('scroll', handleScroll)
+
+
+        //Equivalent to componentDidUnmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
 
     //DEBUG
-    const [xp, setxp] = useState(0)
-    const [yp, setyp] = useState(0)
+    // eslint-disable-next-line no-unused-vars
+    const [xp, setXP] = useState(0)
+    // eslint-disable-next-line no-unused-vars
+    const [yp, setYP] = useState(0)
 
     //Used to put "ref = foo" as we can't put string ref in function component
     const ref = useRef(null);
@@ -15,26 +41,16 @@ let Home = () => {
 
     //Rive data
     const {RiveComponent, rive} = useRive({
-        src: Avatar,
-        stateMachines: "sm",
-        autoplay: true
+        src: Avatar, stateMachines: "sm", autoplay: true
     })
 
-    const eyeHor =
-        useStateMachineInput(
-            rive,
-            "sm",
-            "hor"
-        )
-    const eyeVer =
-        useStateMachineInput(
-            rive,
-            "sm",
-            "ver"
-        )
+    const eyeHor = useStateMachineInput(rive, "sm", "hor")
+    const eyeVer = useStateMachineInput(rive, "sm", "ver")
 
 
-    function onMouseMove(e) {
+    const onMouseMove = (e) => {
+        if (e.currentTarget == undefined) return
+        if (eyeVer.value == undefined || eyeHor.value == undefined) return
 
         //Get size of screen
         const heightY = ref.current.clientHeight;
@@ -42,7 +58,7 @@ let Home = () => {
 
 
         //GETS THE MOUSE POSITION OR CLICK POSITION IN PHONE RELATIVE TO WHOLE SCREEN
-        //IF we wanted our character to be at the top and we point mouse at center of screen
+        //IF we wanted our character to be at the top, and we point mouse at center of screen
         //The above values will not work as it takes the whole screen's position
         //This will cause the avatar to look straight as it thinks that the cursor is aligned to its nose-eyes-ears
         //And not look down
@@ -66,8 +82,8 @@ let Home = () => {
 
         eyeHor.value = perX_Width;
         eyeVer.value = perY_Height;
-        setxp(perX_Width)
-        setyp(perY_Height)
+        setXP(perX_Width)
+        setYP(perY_Height)
 
 
     }
@@ -77,10 +93,11 @@ let Home = () => {
         <div className="home" ref={ref} onMouseMove={onMouseMove}>
             <section className="avatar_buttons">
                 <RiveComponent className='avatar'/>
-                    <button className='btn-1'>Explore my world</button>
-
+                <div className="btn-container">
+                    <button className='btn-2 neonTextWhite flicker btnG button '>Technical Side</button>
+                    <button className='btn-1 neonText subtleFlick button'>Artistic Side</button>
+                </div>
             </section>
-
         </div>
 
 
@@ -89,3 +106,4 @@ let Home = () => {
 
 
 export default Home
+
