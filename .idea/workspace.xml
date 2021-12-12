@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="some changes to button">
-      <change afterPath="$PROJECT_DIR$/src/assets/bg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/dark.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/bg_day.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/cloud.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/AnimatedText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/exploreMy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comps/navbar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home_main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.css" afterDir="false" />
     </list>
@@ -27,6 +28,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,6 +64,7 @@
       <recent name="D:\Projects\ReactJS\portfolio\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\ReactJS\portfolio\src\pages\home\comp\header" />
       <recent name="D:\Projects\ReactJS\portfolio\src\styles" />
     </key>
   </component>
@@ -84,6 +94,11 @@
       <workItem from="1639221381714" duration="15022000" />
       <workItem from="1639250154707" duration="8802000" />
       <workItem from="1639261163199" duration="3116000" />
+      <workItem from="1639297211869" duration="5331000" />
+      <workItem from="1639314356135" duration="4537000" />
+      <workItem from="1639321902707" duration="1391000" />
+      <workItem from="1639323320339" duration="398000" />
+      <workItem from="1639324766554" duration="5099000" />
     </task>
     <task id="LOCAL-00001" summary="some changes to button">
       <created>1639260834614</created>
