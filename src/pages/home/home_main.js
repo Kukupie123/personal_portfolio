@@ -96,6 +96,7 @@ let Home = () => {
 
         let variant = {
             visible: {
+
                 transition: {
                     yoyo: Infinity,
                     duration: duration,
@@ -106,10 +107,15 @@ let Home = () => {
         }
 
         if (shouldGoLeft == false) {
+
             variant.visible.right = 0;
+            variant.visible.top =  [60,20,50,4,2,76,65,5,45, 0, 50, 100, 0];
+            variant.visible.scale = [1,1.3,1,0.7,1,1.1,0.7,0.5,1]
             return variant;
         }
         variant.visible.left = 0;
+        variant.visible.top =  [210,45,234,98,98,67,45,32,23, 0, 15, 31, 0];
+        variant.visible.scale = [1,1.3,1,0.7,1,1.1,0.7,0.5,1]
         return variant;
 
 

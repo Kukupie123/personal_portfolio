@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="some changes to button">
-      <change afterPath="$PROJECT_DIR$/src/assets/bg_day.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/cloud.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/AnimatedText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/exploreMy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comps/exploremytext/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comps/navbar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home_main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <workItem from="1639314356135" duration="4537000" />
       <workItem from="1639321902707" duration="1391000" />
       <workItem from="1639323320339" duration="398000" />
-      <workItem from="1639324766554" duration="5099000" />
+      <workItem from="1639324766554" duration="5915000" />
     </task>
     <task id="LOCAL-00001" summary="some changes to button">
       <created>1639260834614</created>
