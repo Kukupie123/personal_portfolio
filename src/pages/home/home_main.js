@@ -128,7 +128,7 @@ let Home = () => {
 
 
 
-                <h1 className="title">KUKU  PIE</h1>
+                <h1 className="title neonTextWhite2 flicker2">KUKU  PIE</h1>
 
 
             <div className="cloud-container filter-dark">
