@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="neon text">
+    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="transition added">
+      <change afterPath="$PROJECT_DIR$/src/assets/bg3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/bg4.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home_main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/neon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/neon.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,8 +57,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\ReactJS\portfolio\src\styles" />
       <recent name="D:\Projects\ReactJS\portfolio\src\assets" />
+      <recent name="D:\Projects\ReactJS\portfolio\src\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\ReactJS\portfolio\src\pages\home\comp\header" />
@@ -99,7 +100,7 @@
       <workItem from="1639740512547" duration="1714000" />
       <workItem from="1639811710333" duration="1026000" />
       <workItem from="1639812953157" duration="34000" />
-      <workItem from="1639813186795" duration="3800000" />
+      <workItem from="1639813186795" duration="6195000" />
     </task>
     <task id="LOCAL-00001" summary="some changes to button">
       <created>1639260834614</created>
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639815606958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="transition added">
+      <created>1639821464347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639821464347</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +151,7 @@
     <MESSAGE value="some changes to button" />
     <MESSAGE value="added title" />
     <MESSAGE value="neon text" />
-    <option name="LAST_COMMIT_MESSAGE" value="neon text" />
+    <MESSAGE value="transition added" />
+    <option name="LAST_COMMIT_MESSAGE" value="transition added" />
   </component>
 </project>

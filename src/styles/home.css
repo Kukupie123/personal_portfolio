@@ -17,7 +17,7 @@ html body {
     height: 100vh;
     /*Full width*/
     width: 100%;
-    background-image: url("../assets/bg.jpg");
+    background-image: url("../assets/bg4.gif");
     background-position: center;
     background-blend-mode: multiply;
     background-size: cover;
@@ -38,10 +38,9 @@ html body {
 }
 
 
-
 .title {
     position: absolute;
-    background-image: linear-gradient(to right, #483b30,#fffafa,#ffb0a0, #5e565a);
+    background-image: linear-gradient(to right, #483b30, #fffafa, #ffb0a0, #5e565a);
     color: transparent;
     font-family: "Agency FB";
     border: 0px;
@@ -86,12 +85,13 @@ html body {
 
 
 .filter-dark {
-    filter: grayscale(100%) brightness(30%);
+    filter: brightness(70%) drop-shadow(10px 10px 10px #181526);
 }
 
 
 .avatar_buttons {
     display: grid;
+
 }
 
 .avatar-button-container {
@@ -102,7 +102,7 @@ html body {
 }
 
 .avatar {
-    filter: grayscale(30%);
+    filter: grayscale(30%) drop-shadow(10px 10px 10px #181526);
     height: 500px;
 }
 

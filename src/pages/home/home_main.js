@@ -120,6 +120,42 @@ let Home = () => {
     }
 
 
+    //For showing text on hovering on either options
+
+
+    const [nerdCornerText, setNerdText] = useState("Nerd's Corner");
+    const [nerdCornerProperty, setNerdCornerProperty] = useState("btn-2 neonTextWhite flicker");
+    const onHoverNerd = (isHovered) => {
+        //change the size of the font
+        //get rid of neon flickering
+        //change text
+        if (isHovered) {
+            setNerdCornerProperty("btn-2 neonTextWhite");
+            setNerdText("Check my projects and technical skills");
+        } else {
+            setNerdCornerProperty("btn-2 neonTextWhite flicker");
+            setNerdText("Nerd's Corner");
+        }
+
+    }
+
+
+    const [artText, setArtText] = useState("Artistic Side");
+    const [artProperty, setArtProperty] = useState("btn-1 neonText subtleFlick");
+    const onHoverArt = (isHovered) => {
+        //change the size of the font
+        //get rid of neon flickering
+        //change text
+        if (isHovered) {
+            setArtProperty("btn-1 neonText");
+            setArtText("Check my musics and other stuff");
+        } else {
+            setArtProperty("btn-1 neonText subtleFlick");
+            setArtText("Artistic Side");
+        }
+
+    }
+
     return (
 
         <div className="home" ref={ref} onMouseMove={onMouseMove}>
@@ -185,7 +221,11 @@ let Home = () => {
 
                 {/*ButtonContainer to align buttons*/}
                 <div className="btn-container">
-                    <motion.button className='btn-2 neonTextWhite flicker  '
+                    <motion.button className={nerdCornerProperty}
+
+                                   onHoverStart={() => onHoverNerd(true)}
+                                   onHoverEnd={() => onHoverNerd(false)}
+
                                    initial={{
                                        scale: 0, left: "-100vw", top: "-100vh",
 
@@ -201,10 +241,12 @@ let Home = () => {
                                    whileHover={{
                                        backgroundColor: "rgba(100,0,0,0.5)", color: "pink", borderTopLeftRadius: "5px",
                                    }}
-                    >Nerd's corner
+                    >{nerdCornerText}
                     </motion.button>
 
-                    <motion.button className='btn-1 neonText subtleFlick '
+                    <motion.button className={artProperty}
+                                   onHoverStart={() => onHoverArt(true)}
+                                   onHoverEnd={() => onHoverArt(false)}
                                    initial={{
                                        scale: 0, right: "-100vw", bottom: "-100vh"
 
@@ -220,7 +262,7 @@ let Home = () => {
                                        backgroundColor: "rgba(0,0,0,0.5)", color: "pink", borderTopRightRadius: "5px",
 
                                    }}
-                    >Artistic Side
+                    >{artText}
                     </motion.button>
                 </div>
 
