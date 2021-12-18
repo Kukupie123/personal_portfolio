@@ -126,9 +126,22 @@ let Home = () => {
             {/*Moving Cloud section*/}
 
 
+            <motion.h1
 
+                initial={
+                    {
+                        left: "-100%",
 
-                <h1 className="title neonTextWhite2 flicker2">KUKU  PIE</h1>
+                    }
+                }
+
+                animate={{
+                    left: "auto",
+
+                }}
+
+                className="title neonTextWhite2 flicker2">KUKU PIE
+            </motion.h1>
 
 
             <div className="cloud-container filter-dark">
@@ -199,7 +212,7 @@ let Home = () => {
                                    }}
 
                                    animate={{
-                                       right: 0, bottom: 0, scale: 1
+                                       right: 0, bottom: 0, scale: 1,
                                    }}
 
 

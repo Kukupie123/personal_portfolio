@@ -40,7 +40,6 @@ html body {
 
 
 .title {
-    z-index: 1;
     position: absolute;
     background-image: linear-gradient(to right, #483b30,#fffafa,#ffb0a0, #5e565a);
     color: transparent;
