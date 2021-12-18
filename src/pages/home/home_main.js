@@ -2,8 +2,6 @@ import React, {useState, useRef, useEffect} from "react";
 import Avatar from "../../assets/avatar_neutral.riv"
 import {useRive, useStateMachineInput} from "rive-react";
 import {motion} from "framer-motion";
-import 'tailwindcss/tailwind.css'
-
 //STYLES
 import '../../styles/home.css'
 import '../../styles/neon.css'
@@ -109,25 +107,16 @@ let Home = () => {
         if (shouldGoLeft == false) {
 
             variant.visible.right = 0;
-            variant.visible.top =  [60,20,50,4,2,76,65,5,45, 0, 50, 100, 0];
-            variant.visible.scale = [1,1.3,1,0.7,1,1.1,0.7,0.5,1]
+            variant.visible.top = [60, 20, 50, 4, 2, 76, 65, 5, 45, 0, 50, 100, 0];
+            variant.visible.scale = [1, 1.3, 1, 0.7, 1, 1.1, 0.7, 0.5, 1]
             return variant;
         }
         variant.visible.left = 0;
-        variant.visible.top =  [210,45,234,98,98,67,45,32,23, 0, 15, 31, 0];
-        variant.visible.scale = [1,1.3,1,0.7,1,1.1,0.7,0.5,1]
+        variant.visible.top = [210, 45, 234, 98, 98, 67, 45, 32, 23, 0, 15, 31, 0];
+        variant.visible.scale = [1, 1.3, 1, 0.7, 1, 1.1, 0.7, 0.5, 1]
         return variant;
 
 
-    }
-
-
-    const getRandomHeightForCloud = (max, min) => {
-        const height = Math.random() * (max - min) + min;
-
-        return {
-            top: height + "px"
-        }
     }
 
 
@@ -135,6 +124,12 @@ let Home = () => {
 
         <div className="home" ref={ref} onMouseMove={onMouseMove}>
             {/*Moving Cloud section*/}
+
+
+
+
+                <h1 className="title">KUKU  PIE</h1>
+
 
             <div className="cloud-container filter-dark">
 
@@ -212,7 +207,7 @@ let Home = () => {
                                        backgroundColor: "rgba(0,0,0,0.5)", color: "pink", borderTopRightRadius: "5px",
 
                                    }}
-                    >Artistic World
+                    >Artistic Side
                     </motion.button>
                 </div>
 

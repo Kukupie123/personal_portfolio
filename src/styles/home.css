@@ -37,6 +37,35 @@ html body {
     text-align: center;
 }
 
+
+
+.title {
+    z-index: 1;
+    position: absolute;
+    background-image: linear-gradient(to right, #483b30,#fffafa,#ffb0a0, #5e565a);
+    color: transparent;
+    font-family: "Agency FB";
+    border: 0px;
+    font-size: 100px;
+    /*To set the background image to the text*/
+    -webkit-background-clip: text;
+    /*animating*/
+    background-size: 300%;
+    background-position: 100%;
+    /*keyframe - duration - quantity of anim - how to blend*/
+    animation: animatingGradientText 5s infinite alternate-reverse;
+}
+
+@keyframes animatingGradientText {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+
+}
+
 .cloud-container {
     /*position will be absolute to its parent and will not take any space*/
     position: relative;
@@ -95,7 +124,7 @@ html body {
     padding: 2em;
     font-weight: bold;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
 
     /*sizing*/
     width: 20em;
@@ -110,7 +139,7 @@ html body {
     color: whitesmoke;
     font-weight: bold;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
 
     /*sizing*/
     width: 20em;
