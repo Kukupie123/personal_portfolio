@@ -50,17 +50,32 @@
 }
 
 .side-nav-logo {
+
     display: flex;
     position: absolute;
     width: 6.5vw;
     top: 1.5vh;
 }
 
-.nav-button {
+.nav-buttonACTIVE {
+    background-color: transparent;
     padding: 20px;
     text-align: center;
     font-family: "Agency FB";
     font-size: 1.8vw;
     font-weight: bold;
     border-bottom: 1px solid #000;
+    border: none;
+}
+
+.nav-button {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    font-family: "Agency FB";
+    font-size: 1vw;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    border: none;
+
 }
