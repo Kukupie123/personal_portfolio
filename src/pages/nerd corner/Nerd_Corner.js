@@ -8,6 +8,7 @@ import SideNav from "./comp/nav/SideNav";
 
 const NerdCorner = () => {
     const [color, setColor] = useState("rgba(255, 255, 255, 0.06)");
+
     return (
         <div className="bg">
             <SideNav/>

@@ -13,6 +13,7 @@
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }
+
 .glass2 {
     /*FILTER*/
     -webkit-backdrop-filter: blur(5px);
@@ -40,8 +41,26 @@
     width: 7vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     border-radius: 10px;
     border: none;
     background-image: linear-gradient(rgba(44, 30, 30, 0.01), rgba(91, 182, 218, 0.09), rgba(36, 78, 93, 0.01));
 
+}
+
+.side-nav-logo {
+    display: flex;
+    position: absolute;
+    width: 6.5vw;
+    top: 1.5vh;
+}
+
+.nav-button {
+    padding: 20px;
+    text-align: center;
+    font-family: "Agency FB";
+    font-size: 1.8vw;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
 }
