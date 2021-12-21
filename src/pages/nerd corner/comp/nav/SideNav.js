@@ -3,7 +3,7 @@ import "../../styles/nerdcorner.css"
 
 const SideNav = () => {
     return (
-        <div className="side-nav glass">
+        <div className="side-nav glass2">
             Size Nav
         </div>
     )

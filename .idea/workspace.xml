@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="nerd corner page started">
-      <change afterPath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav/SideNav.js" afterDir="false" />
+    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="nav bar added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/Nerd_Corner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/Nerd_Corner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav/SideNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav/SideNav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/styles/nerdcorner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/styles/nerdcorner.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1639813186795" duration="6261000" />
       <workItem from="1639823712513" duration="741000" />
       <workItem from="1639930662010" duration="51000" />
-      <workItem from="1640071481650" duration="5663000" />
+      <workItem from="1640071481650" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="some changes to button">
       <created>1639260834614</created>
@@ -146,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640080143415</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="nav bar added">
+      <created>1640083077953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640083077953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +176,7 @@
     <MESSAGE value="transition added" />
     <MESSAGE value="some few changes" />
     <MESSAGE value="nerd corner page started" />
-    <option name="LAST_COMMIT_MESSAGE" value="nerd corner page started" />
+    <MESSAGE value="nav bar added" />
+    <option name="LAST_COMMIT_MESSAGE" value="nav bar added" />
   </component>
 </project>

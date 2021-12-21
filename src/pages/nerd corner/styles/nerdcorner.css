@@ -10,9 +10,13 @@
 
 .glass {
     /*FILTER*/
-    background-color: rgba(255, 255, 255, 0.06);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+}
+.glass2 {
+    /*FILTER*/
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .second-container {
@@ -38,6 +42,6 @@
     flex-direction: column;
     border-radius: 10px;
     border: none;
-    background-image: linear-gradient(rgba(44, 30, 30, 0.2), rgba(91, 182, 218, 0.2), rgba(36, 78, 93, 0.25));
+    background-image: linear-gradient(rgba(44, 30, 30, 0.01), rgba(91, 182, 218, 0.09), rgba(36, 78, 93, 0.01));
 
 }
