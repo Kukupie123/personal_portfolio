@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="blur changes">
-      <change afterPath="$PROJECT_DIR$/src/assets/kukukode2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav button/NavButton.js" afterDir="false" />
+    <list default="true" id="f27cc338-5798-4e17-9cb4-c87ef8bf8c10" name="Changes" comment="other changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/Nerd_Corner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/Nerd_Corner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav/SideNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/comp/nav/SideNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nerd corner/styles/nerdcorner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nerd corner/styles/nerdcorner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/kukukode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home_main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,8 @@
       <workItem from="1639813186795" duration="6261000" />
       <workItem from="1639823712513" duration="741000" />
       <workItem from="1639930662010" duration="51000" />
-      <workItem from="1640071481650" duration="8207000" />
+      <workItem from="1640071481650" duration="8224000" />
+      <workItem from="1640100579490" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="some changes to button">
       <created>1639260834614</created>
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640083641541</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="other changes">
+      <created>1640091206076</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640091206076</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +197,7 @@
     <MESSAGE value="nerd corner page started" />
     <MESSAGE value="nav bar added" />
     <MESSAGE value="blur changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="blur changes" />
+    <MESSAGE value="other changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="other changes" />
   </component>
 </project>

@@ -2,6 +2,8 @@ import React, {useState, useRef, useEffect} from "react";
 import Avatar from "../../assets/avatar_neutral.riv"
 import {useRive, useStateMachineInput} from "rive-react";
 import {motion} from "framer-motion";
+import {useNavigate} from "react-router-dom";
+
 //STYLES
 import '../../styles/home.css'
 import '../../styles/neon.css'
@@ -13,6 +15,8 @@ import Cloud from '../../assets/cloud.png'
 
 let Home = () => {
     //Scrolling Data section
+    const navigate = useNavigate();
+
     const [scrollY, setScrollY] = useState(0) //Starting value is 0 and as we scroll down the value will change
     //Updates the value of scroll
     const handleScroll = () => {
@@ -29,7 +33,7 @@ let Home = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    }, 6)
+    })
     //DEBUG
     // eslint-disable-next-line no-unused-vars
     const [xp, setXP] = useState(0)
@@ -240,6 +244,10 @@ let Home = () => {
 
                                    whileHover={{
                                        backgroundColor: "rgba(100,0,0,0.5)", color: "pink", borderTopLeftRadius: "5px",
+                                   }}
+
+                                   onClick={() => {
+                                       navigate('/nerd_corner')
                                    }}
                     >{nerdCornerText}
                     </motion.button>
